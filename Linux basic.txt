@@ -1,0 +1,220 @@
+Introduction
+------------
+Linux started around 1991 by Linus Torlvads.
+
+Linux is an multi-user, multitasking Operating System.
+
+Linux is Open Source not like AIX, Sun Solaris, HP-UX...
+
+Linux is "case-sensitive" Is is different of LS.   (ls)
+
+Following are the Linux distributions.
+--------------------------------------
+1) Redhat
+
+2) CentOS
+
+3) Ubuntu
+
+4) SuSe Linux
+
+5) Fedora
+
+6) Gentoo
+
+7) Mandriva.
+
+
+---------------------------------------------------------------------
+Linux File Structure
+
+/
+
+/home
+
+/bin
+
+/sbin
+
+/etc
+
+lib
+
+/opt
+
+Linux file system is casesensitive. 
+
+Following are the directories in the Redhat OS.
+---------------------------------------------------
+/   called is root directory. (Perent dir)
+
+home: It contains home directories for all users to store their personal files.
+
+       Ex: /home/bhaskar or /home/mithun
+
+bin: It contains the commands and binary files. User can access the commands.
+
+       Ex: mkdir, Is, cd, ps....
+
+sbin: Just like /bin It contains the commands and files, but only root user can access.
+
+       Ex: ifconfig, reboot, shutdown and swapon.....
+
+etc: It contains the configuration files.
+
+lib: It contains the system libraries.
+
+proc: It contains the process information.
+
+tmp: It contains the temporary files.
+
+usr: It contains the binaries and libraries. 
+
+var: It contains variable files. This includes system log files(/var/log), emails (/var/mail) and temp files needed across rebots (/var/tmp)
+
+dev: It contains the device files.
+
+     Ex: USB or any device attached to the server.
+
+---------------------------------------------------
+Commands:
+------------------------------
+touch: to create a empty file
+
+cat:  
+
+mkdir: Make or Create directory
+
+ls: List the directory contents.
+
+tree: It will list contents of directories in a tree-like format.
+
+cd: Change directory
+
+pwd: Print working directory/present working dir
+
+rmdir: Remove or Delete directory
+
+rm: It will remove a file or directory.
+
+--------------------------------------------------------------------
+ 3 types of permissions
+
+
+   read        --    r
+  write     ---     w
+  execute  --     x
+
+
+
+         _ _ _         _ _ _         _ _ _
+         owner         group         others	
+
+
+Numerical notation
+Alphabetical notation
+
+
+Numerical notation
+-----------------------------
+
+ read        --   4
+ write      --   2
+ execute  --   1
+
+
+  f2   ----------  rw-     rw-   r--
+
+   f2   ---------  rwx     rw-    r--
+
+
+r + w +x  --  4 + 2 +1  =  7
+
+
+ 7  -- all permissions
+
+chmod  764   f2
+
+chmod  777  f2
+
+
+
+ read        --   4
+ write      --   2
+ execute  --   1
+
+ 0  -  no permissions
+ 1   --   execute
+ 2  --  w
+ 3  --   wx
+ 4   --  r
+ 5 -  rx
+ 6 -  rw
+ 7 -  rwx
+
+
+
+chmod  770  f2
+
+
+chmod  666  f2
+
+chmod  600  f2
+
+chmod  456  f2
+
+
+chmod  777  d1
+
+++++++++++++++++++++++
+
+
+Alphabetical notation
+
+
+owner     --  u
+group   --    g
+others  --    o
+
+
+ +  
+
+ -
+
+f2  ----------  r--        r-x       rw-
+
+f2  ----------  r--        r-x       rwx
+
+
+chmod  o+x     f2
+
+
+f2  ----------  r--        r-x       rwx
+
+
+f2  --------    rw-        rwx       rwx
+
+-----------------------------------------------------------------------
+Vi Editor
+-------------
+Basic editor in linux
+
+To create a file
+i  - to go to insert mode
+
+:wq  -- save and exit
+
+:q!  -- exit without saving
+
+Default mode - command mode
+
+
+Esc - to come out of insert mode  to command mode
+dd   - to delete a line
+
+yy  --  to copy the line
+p  - to paste  below
+-------------------------------------------------------------------------------
+
+
+
